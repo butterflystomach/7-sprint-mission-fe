@@ -1,0 +1,349 @@
+* {
+    box-sizing: border-box;
+}
+
+/*body {
+    overflow: hidden;
+    margin: 0;
+    padding: 20px;
+}*/
+
+.container1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    margin: 231px 640px 284px;
+    gap: 40px;
+}
+
+.container2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    flex-shrink: 0;
+    margin: 60px 640px 178px;
+    gap: 40px;
+}
+
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+    align-self: stretch;
+}
+
+.logo {
+     display: flex;
+     flex-direction: row;
+     align-items: center;
+     gap: 22.24px;
+     flex-wrap: nowrap;
+}
+
+.logolink {
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    gap: 22.24px;
+}
+
+.name {
+    color: var(--brand-blue, #3692FF);
+    font-family: "ROKAF Sans";
+    font-size: 66.344px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    white-space: nowrap;
+}
+
+.email {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.emailtxt {
+    color: var(--Secondary-800, #1F2937);
+    /* pretendard/2lg-18px-bold */
+    font-family: "Pretendard", sans-serif;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 144.444% */
+}
+
+.typemail {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    background: #F3F4F6;
+    width: 640px;
+    height: 56px;
+    padding: 16px 24px;
+    gap: 10px;
+    outline: none;
+    border: none;
+}
+
+.password {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.passwordtxt {
+    color: var(--Secondary-800, #1F2937);
+    /* pretendard/2lg-18px-bold */
+    font-family: Pretendard;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 144.444% */
+}
+
+.typepassword {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    background: #F3F4F6;
+    width: 640px;
+    height: 56px;
+    padding: 16px 24px;
+    gap: 10px;
+    outline: none;
+    border: none;
+}
+
+.passwordandimg {
+    position: relative;
+    display: inline-block;
+}
+
+.passwordandimg input {
+    flex-shrink: 0;
+}
+
+.passwordandimg img {
+    position: absolute;
+    right: 24px;
+    top: 50%;
+    transform: translateY(-50%);
+    height: 20px;
+    cursor: pointer;
+  }
+
+.passwordandimg .toggle-password {
+    display: flex;
+    width: 24px;
+    height: 24px;
+    justify-content: center;
+    align-items: center;
+}
+
+.click {
+    display: flex;
+    width: 640px;
+    height: 56px;
+    padding: 16px 124px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 40px;
+    background: var(--Secondary-400, #9CA3AF);
+    outline: none;
+    border: none;
+}
+
+.logintxt {
+    color: var(--Cool-Gray-100, #F3F4F6);
+    text-align: center;
+    /* pretendard/xl-20px-semibold */
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 160% */
+}
+
+.easylogin {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+    border-radius: 8px;
+    background: #E6F2FF; 
+    padding: 16px 23px;
+}
+
+.easylogin2 {
+    display: flex;
+    width: 594px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.easytxt {
+    color: var(--Secondary-800, #1F2937);
+    /* pretendard/lg-16px-medium */
+    font-family: Pretendard;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 26px; /* 162.5% */
+}
+
+.easyimg {
+    display: flex;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.signin {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: nowrap;
+}
+
+.signtxt1 {
+    color: var(--Secondary-800, #1F2937);
+    /* pretendard/md-14px-medium */
+    font-family: Pretendard;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 171.429% */
+    white-space: nowrap;
+}
+
+.signlink {
+    color: #3692FF;
+    font-family: Pretendard;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    white-space: nowrap;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+.loginlink {
+    color: #3692FF;
+    font-family: Pretendard;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    white-space: nowrap;
+    text-decoration-line: underline;
+    text-decoration-style: solid;
+    text-decoration-skip-ink: none;
+    text-decoration-thickness: auto;
+    text-underline-offset: auto;
+    text-underline-position: from-font;
+}
+
+
+.nickname {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.nicknametxt {
+    color: var(--Cool-Gray-800, #1F2937);
+    font-family: Pretendard;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.typename {
+    display: flex;
+    width: 640px;
+    height: 56px;
+    padding: 16px 24px;
+    align-items: center;
+    gap: 10px;
+    border-radius: 12px;
+    background: var(--Cool-Gray-100, #F3F4F6);
+    outline: none;
+    border: none;
+}
+
+.checkpassword {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 16px;
+}
+
+.checkpasswordtxt {
+    color: var(--Secondary-800, #1F2937);
+    /* pretendard/2lg-18px-bold */
+    font-family: Pretendard;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 26px; /* 144.444% */
+}
+
+.signintxt {
+    color: var(--Cool-Gray-100, #F3F4F6);
+    text-align: center;
+    /* pretendard/xl-20px-semibold */
+    font-family: Pretendard;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 32px; /* 160% */
+}
+
+.login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4px;
+    flex-wrap: nowrap;
+}
+
+.logintxt1 {
+    color: var(--Secondary-800, #1F2937);
+    /* pretendard/md-14px-medium */
+    font-family: Pretendard;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 24px; /* 171.429% */
+    white-space: nowrap;
+}
+
+input:focus {
+    outline: none;
+    border: 2px solid #3692FF;
+}
+
+button:hover {
+    outline: none;
+    background-color: #3692FF;
+    cursor: pointer;
+    border: 2px solid #3692FF;
+}
+
+input {
+    font-size: 16px;
+}
