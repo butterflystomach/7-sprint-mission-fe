@@ -42,7 +42,7 @@
      flex-wrap: nowrap;
 }
 
-.logolink {
+.logoLink {
     text-decoration: none;
     align-items: center;
     justify-content: center;
@@ -60,6 +60,13 @@
     white-space: nowrap;
 }
 
+#loginForm {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 24px;
+}
+
 .email {
     display: flex;
     flex-direction: column;
@@ -67,7 +74,7 @@
     gap: 16px;
 }
 
-.emailtxt {
+.emailTxt {
     color: var(--Secondary-800, #1F2937);
     /* pretendard/2lg-18px-bold */
     font-family: "Pretendard", sans-serif;
@@ -77,7 +84,7 @@
     line-height: 26px; /* 144.444% */
 }
 
-.typemail {
+.typeMail {
     display: flex;
     align-items: center;
     border-radius: 12px;
@@ -97,7 +104,7 @@
     gap: 16px;
 }
 
-.passwordtxt {
+.passwordTxt {
     color: var(--Secondary-800, #1F2937);
     /* pretendard/2lg-18px-bold */
     font-family: Pretendard;
@@ -107,7 +114,7 @@
     line-height: 26px; /* 144.444% */
 }
 
-.typepassword {
+.typePassword {
     display: flex;
     align-items: center;
     border-radius: 12px;
@@ -120,16 +127,29 @@
     border: none;
 }
 
-.passwordandimg {
+.confirmPassword {
+    display: flex;
+    align-items: center;
+    border-radius: 12px;
+    background: #F3F4F6;
+    width: 640px;
+    height: 56px;
+    padding: 16px 24px;
+    gap: 10px;
+    outline: none;
+    border: none;
+}
+
+.passwordAndImg {
     position: relative;
     display: inline-block;
 }
 
-.passwordandimg input {
+.passwordAndImg input {
     flex-shrink: 0;
 }
 
-.passwordandimg img {
+.passwordAndImg img {
     position: absolute;
     right: 24px;
     top: 50%;
@@ -138,7 +158,7 @@
     cursor: pointer;
   }
 
-.passwordandimg .toggle-password {
+.passwordAndImg .toggle-password {
     display: flex;
     width: 24px;
     height: 24px;
@@ -158,9 +178,16 @@
     background: var(--Secondary-400, #9CA3AF);
     outline: none;
     border: none;
+    cursor: not-allowed;
+    transition: background-color 0.3s;
 }
 
-.logintxt {
+.click.enabled {
+    background-color: #3692FF;
+    cursor: pointer;
+}
+
+.loginTxt {
     color: var(--Cool-Gray-100, #F3F4F6);
     text-align: center;
     /* pretendard/xl-20px-semibold */
@@ -171,7 +198,7 @@
     line-height: 32px; /* 160% */
 }
 
-.easylogin {
+.easyLogin {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
@@ -181,14 +208,14 @@
     padding: 16px 23px;
 }
 
-.easylogin2 {
+.easyLogin2 {
     display: flex;
     width: 594px;
     justify-content: space-between;
     align-items: center;
 }
 
-.easytxt {
+.easyTxt {
     color: var(--Secondary-800, #1F2937);
     /* pretendard/lg-16px-medium */
     font-family: Pretendard;
@@ -198,13 +225,13 @@
     line-height: 26px; /* 162.5% */
 }
 
-.easyimg {
+.easyImg {
     display: flex;
     align-items: flex-start;
     gap: 16px;
 }
 
-.signin {
+.signIn {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -212,7 +239,7 @@
     flex-wrap: nowrap;
 }
 
-.signtxt1 {
+.signTxt1 {
     color: var(--Secondary-800, #1F2937);
     /* pretendard/md-14px-medium */
     font-family: Pretendard;
@@ -223,7 +250,7 @@
     white-space: nowrap;
 }
 
-.signlink {
+.signLink {
     color: #3692FF;
     font-family: Pretendard;
     font-size: 14px;
@@ -239,7 +266,7 @@
     text-underline-position: from-font;
 }
 
-.loginlink {
+.loginLink {
     color: #3692FF;
     font-family: Pretendard;
     font-size: 14px;
@@ -263,7 +290,7 @@
     gap: 16px;
 }
 
-.nicknametxt {
+.nicknameTxt {
     color: var(--Cool-Gray-800, #1F2937);
     font-family: Pretendard;
     font-size: 18px;
@@ -272,7 +299,7 @@
     line-height: normal;
 }
 
-.typename {
+.typeName {
     display: flex;
     width: 640px;
     height: 56px;
@@ -285,14 +312,14 @@
     border: none;
 }
 
-.checkpassword {
+.checkPassword {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     gap: 16px;
 }
 
-.checkpasswordtxt {
+.checkPasswordTxt {
     color: var(--Secondary-800, #1F2937);
     /* pretendard/2lg-18px-bold */
     font-family: Pretendard;
@@ -302,7 +329,7 @@
     line-height: 26px; /* 144.444% */
 }
 
-.signintxt {
+.signinTxt {
     color: var(--Cool-Gray-100, #F3F4F6);
     text-align: center;
     /* pretendard/xl-20px-semibold */
@@ -321,7 +348,7 @@
     flex-wrap: nowrap;
 }
 
-.logintxt1 {
+.loginTxt1 {
     color: var(--Secondary-800, #1F2937);
     /* pretendard/md-14px-medium */
     font-family: Pretendard;
