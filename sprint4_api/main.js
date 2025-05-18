@@ -5,7 +5,7 @@ import {
   createArticle,
   patchArticle,
   deleteArticle
-} from './ArticleService.js';
+} from './article.js';
 
 import {
   getProductList,
@@ -13,7 +13,7 @@ import {
   createProduct,
   patchProduct,
   deleteProduct
-} from './ProductService.js';
+} from './product.js';
 
 // 구분선 출력을 위한 헬퍼 함수
 function printDivider(title) {

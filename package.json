@@ -1,0 +1,20 @@
+{
+  "name": "7-sprint-mission-fe",
+  "version": "1.0.0",
+  "description": "sprint mission(FE)의 일환으로 만든 '판다마켓'이라는 가상의 홈페이지입니다.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/butterflystomach/7-sprint-mission-fe.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/butterflystomach/7-sprint-mission-fe/issues"
+  },
+  "homepage": "https://github.com/butterflystomach/7-sprint-mission-fe#readme"
+}
