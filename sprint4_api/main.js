@@ -1,4 +1,3 @@
-// ArticleService와 ProductService 모듈 불러오기
 import {
   getArticleList,
   getArticle,
@@ -15,18 +14,15 @@ import {
   deleteProduct
 } from './product.js';
 
-// 구분선 출력을 위한 헬퍼 함수
 function printDivider(title) {
   console.log('\n' + '='.repeat(50));
   console.log(`${title}`);
   console.log('='.repeat(50));
 }
 
-// 테스트용 ID 저장 변수
 let testArticleId = '';
 let testProductId = '';
 
-// Article API 테스트
 function testArticleAPI() {
   printDivider('Article API 테스트 시작');
   
