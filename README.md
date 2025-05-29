@@ -1,25 +1,12 @@
-# 풀스택 7기 김제성 Sprint Mission(FE)
+# React + Vite
 
-sprint mission(FE)의 일환으로 만든 '판다마켓'이라는 가상의 홈페이지입니다.
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
 
-## 기능 
+Currently, two official plugins are available:
 
-- 메인 홈페이지 
-- 로그인 및 회원가입 페이지
-- 외부사이트와의 연결
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-풀스택 과정에서 배운 여러 기능들을 연습해보며 익히는 과정입니다.  
-sprint mission의 요구 사항을 최대한으로 구현하려 노력하고 있으나, 몇몇 오류나 문제가 있을 수 있습니다. 
-차후 미션의 진행에 따라 몇몇 기능들이 추가 및 수정될 수 있습니다. 
+## Expanding the ESLint configuration
 
-## 진행 상황 
-
-1. 미션 1 & 2 (25.4.27 PR)
-
-미션 1, 2에서는 '판다마켓'의 메인 홈페이지와 로그인 및 회원가입 페이지의 html과 css 설계를 중점적으로 다루었습니다. 
-또한 github로 첫 PR을 진행하였습니다. 
-
-2. 미션 3 (25.5.11 PR)
-
-미션 3에서는 로그인과 회원가입 페이지에서의 JavaScript 작성을 진행하였습니다. 
-error, btn enable, alert 등의 기능 구현이 주요 목표입니다. 
+If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
