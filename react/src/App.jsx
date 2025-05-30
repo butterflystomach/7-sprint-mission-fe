@@ -1,5 +1,4 @@
-import Header from '/Header.jsx';
-import '../mission_pandaMarket/css/style.css';
+import Header from './Header.jsx';
 
 function App() {
   return (

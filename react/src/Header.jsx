@@ -1,11 +1,13 @@
+import logoImg from './assets/panda-logo.svg'; 
+
 function Header() {
   const handleLogoClick = () => {
-    // 홈으로 이동하는 로직
-    window.location.href = '../mission_pandaMarket/html/index.html';
+    // React Router 사용 시: navigate('/');
+    window.location.href = '/';
   };
 
   const handleLoginClick = () => {
-    // 로그인 페이지로 이동하는 로직
+    // React Router 사용 시: navigate('/login');
     window.location.href = '/login';
   };
 
@@ -13,10 +15,14 @@ function Header() {
     <header>
       <div className="top">
         <div className="logo">
-          <button className="logoImg" onClick={handleLogoClick}>
-            <img src="../mission_pandaMarket/img/판다 얼굴.svg" alt="판다마켓" />
-          </button>
+          <h1 className="logoImg">
+            <img src={logoImg} alt="판다마켓 로고" />
+          </h1>
           <h1 className="logoTxt">판다마켓</h1>
+        </div>
+        <div className='newPage'>
+          <p className='newPageTxt'>자유게시판</p>
+          <p className='newPageTxt'>중고마켓</p>
         </div>
         <div className="login">
           <button 
