@@ -1,0 +1,36 @@
+.underBar {
+    padding: 32px 200px;
+    background: #111827;
+    height: 160px;
+}
+
+.foot {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.copyRight {
+    color: #9CA3AF;
+}
+
+.privacyFaq {
+    display: flex;
+    gap: 30px;
+    color: #E5E7EB;
+}
+
+.sns {
+    display: flex;
+    gap: 12px;
+}
+
+.foot a {
+    text-decoration: none;
+}
+
+.privacyFaq a {
+    color: #E5E7EB;
+}
+

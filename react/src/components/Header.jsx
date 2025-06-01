@@ -1,4 +1,5 @@
-import logoImg from './assets/panda-logo.svg'; 
+import logoImg from '../assets/panda-logo.svg'; 
+import './Header.css';
 
 function Header() {
   const handleLogoClick = () => {
