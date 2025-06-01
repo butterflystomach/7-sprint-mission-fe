@@ -1,9 +1,9 @@
 /* 상품 목록 스타일 */
-.product-list {
+.productList {
   margin-bottom: 48px;
 }
 
-.product-list-header {
+.productListHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -12,10 +12,9 @@
   gap: 16px;
 }
 
-.section-title {
+.sectionTitle {
   font-size: 20px;
   font-weight: 700;
-  margin-bottom: 0;
   color: #1f2937;
 }
 
@@ -26,46 +25,47 @@
   flex-wrap: wrap;
 }
 
-.search-form {
+.searchForm {
   position: relative;
 }
 
-.search-container {
+.searchContainer {
   position: relative;
   display: flex;
   align-items: center;
 }
 
-.search-icon {
+.searchIcon {
   position: absolute;
   left: 12px;
   color: #9ca3af;
   z-index: 1;
 }
 
-.search-input {
+.searchInput {
   width: 325px;
   padding: 12px 12px 12px 40px;
-  border: 1px solid #d1d5db;
+  outline: none;
+  border: none;
   border-radius: 12px;
   font-size: 16px;
-  background: white;
-  transition: border-color 0.2s ease, box-shadow 0.2s ease;
+  background: #F3F4F6;
+  height: 42px;
+  /*transition: border-color 0.2s ease, box-shadow 0.2s ease;*/
 }
 
-.search-input:focus {
-  outline: none;
-  border-color: #3b82f6;
+.searchInput:focus {
+  border: 1px solid #3692FF;
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
-.search-input::placeholder {
+.searchInput::placeholder {
   color: #9ca3af;
 }
 
-.register-btn {
-  background: #3b82f6;
-  color: white;
+.registerBtn {
+  background: #3692FF;
+  color: #F3F4F6;
   border: none;
   padding: 12px 20px;
   border-radius: 8px;
@@ -73,74 +73,79 @@
   cursor: pointer;
   transition: background-color 0.2s ease;
   white-space: nowrap;
+  font-size: 16px;
+  height: 42px;
+  display: flex;
+  align-items: center;
 }
 
-.register-btn:hover {
-  background: #2563eb;
-}
+/*.registerBtn:hover {
+  border-style: double;
+}*/
 
-.sort-container {
+.sortContainer {
   position: relative;
 }
 
-.sort-select {
+.sortSelect {
   padding: 8px 12px;
-  border: 1px solid #d1d5db;
-  border-radius: 8px;
+  border: 1px solid #E5E7EB;
+  border-radius: 12px;
   background: white;
   font-size: 14px;
   cursor: pointer;
   min-width: 100px;
   transition: border-color 0.2s ease;
+  height: 42px;
 }
 
-.sort-select:focus {
+.sortSelect:focus {
   outline: none;
   border-color: #3b82f6;
 }
 
-.product-grid {
+.productGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
 }
 
-.product-card {
-  background: white;
+.productCard {
+  background: #FCFCFC;
   border-radius: 12px;
   overflow: hidden;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  /*box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);*/
   transition: transform 0.2s ease, box-shadow 0.2s ease;
   cursor: pointer;
 }
 
-.product-card:hover {
+.productCard:hover {
   transform: translateY(-2px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-.product-image-container {
+.productImageContainer {
   width: 100%;
   height: 220px;
   overflow: hidden;
 }
 
-.product-image {
+.productImage {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-.product-card:hover .product-image {
+.productCard:hover .productImage {
   transform: scale(1.05);
 }
 
-.product-info {
+.productInfo {
   padding: 16px;
 }
 
-.product-name {
+.productName {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 8px;
@@ -150,14 +155,14 @@
   overflow: hidden;
 }
 
-.product-price {
+.productPrice {
   font-size: 18px;
   font-weight: 700;
   color: #1f2937;
   margin-bottom: 12px;
 }
 
-.product-stats {
+.productStats {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -171,9 +176,13 @@
   font-size: 14px;
 }
 
+.heartIcon {
+  color: #ef4444;
+}
+
 /* 반응형 디자인 */
 @media (max-width: 768px) {
-  .product-list-header {
+  .productListHeader {
     flex-direction: column;
     align-items: stretch;
   }
@@ -182,49 +191,49 @@
     flex-direction: column;
   }
 
-  .search-input {
+  .searchInput {
     width: 100%;
   }
 
-  .product-grid {
+  .productGrid {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
   }
 
-  .product-image-container {
+  .productImageContainer {
     height: 160px;
   }
 
-  .product-info {
+  .productInfo {
     padding: 12px;
   }
 
-  .product-name {
+  .productName {
     font-size: 14px;
   }
 
-  .product-price {
+  .productPrice {
     font-size: 16px;
   }
 
-  .section-title {
+  .sectionTitle {
     font-size: 18px;
   }
 }
 
 @media (max-width: 480px) {
-  .product-grid {
+  .productGrid {
     grid-template-columns: 1fr;
   }
 
-  .register-btn {
+  .registerBtn {
     width: 100%;
     text-align: center;
   }
 }
 
 @media (min-width: 1024px) {
-  .product-grid {
+  .productGrid {
     grid-template-columns: repeat(5, 1fr);
   }
 }

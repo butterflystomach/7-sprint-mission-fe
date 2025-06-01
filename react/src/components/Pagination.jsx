@@ -23,7 +23,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
   return (
     <div className="pagination">
       <button 
-        className="page-btn"
+        className="pageBtn"
         onClick={() => onPageChange(currentPage - 1)}
         disabled={currentPage === 1}
       >
@@ -33,7 +33,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
       {getPageNumbers().map(page => (
         <button
           key={page}
-          className={`page-btn ${page === currentPage ? 'active' : ''}`}
+          className={`pageBtn ${page === currentPage ? 'active' : ''}`}
           onClick={() => onPageChange(page)}
         >
           {page}
@@ -41,7 +41,7 @@ const Pagination = ({ currentPage, totalPages, onPageChange }) => {
       ))}
       
       <button 
-        className="page-btn"
+        className="pageBtn"
         onClick={() => onPageChange(currentPage + 1)}
         disabled={currentPage === totalPages}
       >

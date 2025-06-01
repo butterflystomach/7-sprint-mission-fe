@@ -1,23 +1,23 @@
 /* 베스트 상품 스타일 */
-.best-products {
+.bestProducts {
   margin-bottom: 60px;
   margin-top: 24px;
 }
 
-.section-title {
+.sectionTitle {
   font-size: 20px;
   font-weight: 700;
   margin-bottom: 24px;
   color: #1f2937;
 }
 
-.best-grid {
+.bestGrid {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
   gap: 24px;
 }
 
-.best-product-card {
+.bestProductCard {
   background: white;
   border-radius: 12px;
   overflow: hidden;
@@ -26,33 +26,33 @@
   cursor: pointer;
 }
 
-.best-product-card:hover {
+.bestProductCard:hover {
   transform: translateY(-4px);
   box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
 }
 
-.product-image-container {
+.productImageContainer {
   width: 100%;
   height: 220px;
   overflow: hidden;
 }
 
-.product-image {
+.productImage {
   width: 100%;
   height: 100%;
   object-fit: cover;
   transition: transform 0.3s ease;
 }
 
-.best-product-card:hover .product-image {
+.bestProductCard:hover .productImage {
   transform: scale(1.05);
 }
 
-.product-info {
+.productInfo {
   padding: 16px;
 }
 
-.product-name {
+.productName {
   font-size: 16px;
   font-weight: 600;
   margin-bottom: 8px;
@@ -62,14 +62,14 @@
   overflow: hidden;
 }
 
-.product-price {
+.productPrice {
   font-size: 18px;
   font-weight: 700;
   color: #1f2937;
   margin-bottom: 12px;
 }
 
-.product-stats {
+.productStats {
   display: flex;
   align-items: center;
   gap: 16px;
@@ -85,40 +85,40 @@
 
 /* 반응형 디자인 */
 @media (max-width: 768px) {
-  .best-grid {
+  .bestGrid {
     grid-template-columns: repeat(2, 1fr);
     gap: 16px;
   }
 
-  .product-image-container {
+  .productImageContainer {
     height: 160px;
   }
 
-  .product-info {
+  .productInfo {
     padding: 12px;
   }
 
-  .product-name {
+  .productName {
     font-size: 14px;
   }
 
-  .product-price {
+  .productPrice {
     font-size: 16px;
   }
 
-  .section-title {
+  .sectionTitle {
     font-size: 18px;
   }
 }
 
 @media (max-width: 480px) {
-  .best-grid {
+  .bestGrid {
     grid-template-columns: 1fr;
   }
 }
 
 @media (min-width: 1024px) {
-  .best-grid {
+  .bestGrid {
     grid-template-columns: repeat(4, 1fr);
   }
 }

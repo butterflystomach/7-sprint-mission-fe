@@ -5,24 +5,24 @@ const BestProductList = ({ products }) => {
   const bestProducts = products.slice(0, 4);
 
   return (
-    <div className="best-products">
-      <h2 className="section-title">베스트 상품</h2>
-      <div className="best-grid">
+    <div className="bestProducts">
+      <h2 className="sectionTitle">베스트 상품</h2>
+      <div className="bestGrid">
         {bestProducts.map((product) => (
-          <div key={product.id} className="best-product-card">
-            <div className="product-image-container">
+          <div key={product.id} className="bestProductCard">
+            <div className="productImageContainer">
               <img 
                 src={product.images[0] || '/api/placeholder/300/200'} 
                 alt={product.name}
-                className="product-image"
+                className="productImage"
               />
             </div>
-            <div className="product-info">
-              <h3 className="product-name">{product.name}</h3>
-              <p className="product-price">{product.price.toLocaleString()}원</p>
-              <div className="product-stats">
+            <div className="productInfo">
+              <h3 className="productName">{product.name}</h3>
+              <p className="productPrice">{product.price.toLocaleString()}원</p>
+              <div className="productStats">
                 <span className="likes">
-                  <span className="heart-icon">♥</span>
+                  <span className="heartIcon">♥</span>
                   {product.favoriteCount}
                 </span>
               </div>
