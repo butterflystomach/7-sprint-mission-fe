@@ -1,0 +1,149 @@
+.registration {
+  min-height: calc(100vh - 200px);
+  padding: 40px 20px;
+  background-color: #ffffff;
+}
+
+.registrationContainer {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0;
+}
+
+.registrationHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 32px;
+  padding-bottom: 16px;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.registrationTitle {
+  font-size: 24px;
+  font-weight: 700;
+  color: #1f2937;
+  margin: 0;
+}
+
+.registrationForm {
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.formGroup {
+  display: flex;
+  flex-direction: column;
+}
+
+.formLabel {
+  font-size: 18px;
+  font-weight: 700;
+  color: #1f2937;
+  margin-bottom: 16px;
+}
+
+.formInput,
+.formTextarea {
+  padding: 16px;
+  border: none;
+  border-radius: 12px;
+  background-color: #f3f4f6;
+  font-size: 16px;
+  color: #374151;
+  transition: background-color 0.2s;
+  resize: none;
+}
+
+.formInput::placeholder,
+.formTextarea::placeholder {
+  color: #9ca3af;
+}
+
+.formInput:focus,
+.formTextarea:focus {
+  outline: none;
+  background-color: #e5e7eb;
+}
+
+.formTextarea {
+  min-height: 200px;
+  font-family: inherit;
+  line-height: 1.5;
+}
+
+.tagButtons {
+  display: flex;
+  gap: 8px;
+  margin-top: 12px;
+}
+
+.tagButton {
+  padding: 8px 16px;
+  background-color: #f3f4f6;
+  border: none;
+  border-radius: 20px;
+  font-size: 14px;
+  color: #6b7280;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.tagButton:hover {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+.tagButton.active {
+  background-color: #3b82f6;
+  color: white;
+}
+
+.submitBtn {
+  padding: 12px 24px;
+  background-color: #3b82f6;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background-color 0.2s;
+  min-width: 80px;
+}
+
+.submitBtn:hover:not(:disabled) {
+  background-color: #2563eb;
+}
+
+.submitBtn:disabled {
+  background-color: #d1d5db;
+  cursor: not-allowed;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .registration {
+    padding: 20px 16px;
+  }
+
+  .registrationHeader {
+    flex-direction: column;
+    gap: 16px;
+    align-items: stretch;
+  }
+
+  .registrationTitle {
+    font-size: 20px;
+    text-align: center;
+  }
+
+  .submitBtn {
+    width: 100%;
+  }
+
+  .tagButtons {
+    flex-wrap: wrap;
+  }
+}

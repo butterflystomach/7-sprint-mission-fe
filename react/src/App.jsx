@@ -5,6 +5,7 @@ import BestProductList from "./components/BestProductList";
 import ProductList from "./components/ProductList";
 import Pagination from "./components/Pagination";
 import Footer from "./components/Footer.jsx";
+import Registration from "./components/Registration.jsx";
 import "./App.css";
 
 // 메인 홈 페이지 컴포넌트
@@ -101,34 +102,6 @@ const HomePage = () => {
   );
 };
 
-// 상품 등록 페이지 컴포넌트
-const RegistrationPage = () => {
-  return (
-    <div className="container">
-      <h1>상품 등록하기</h1>
-      <form>
-        <div>
-          <label>상품명</label>
-          <input type="text" placeholder="상품명을 입력해주세요" />
-        </div>
-        <div>
-          <label>상품 소개</label>
-          <input type="text" placeholder="상품 소개를 입력해주세요" />
-        </div>
-        <div>
-          <label>판매가격</label>
-          <input type="number" placeholder="판매 가격을 입력해주세요" />
-        </div>
-        <div>
-          <label>태그</label>
-          <input type="text" placeholder="태그를 입력해주세요" />
-        </div>
-        <button type="submit">등록</button>
-      </form>
-    </div>
-  );
-};
-
 // 상품 상세 페이지 컴포넌트
 const ProductDetailPage = () => {
   return (
@@ -158,7 +131,7 @@ const App = () => {
         <Routes>
           <Route path="/" element={<HomePage />} />
           <Route path="/items" element={<HomePage />} />
-          <Route path="/registration" element={<RegistrationPage />} />
+          <Route path="/registration" element={<Registration />} />
           <Route path="/products/:id" element={<ProductDetailPage />} />
           <Route path="*" element={<NotFoundPage />} />
         </Routes>
