@@ -6,6 +6,7 @@ import ProductList from "./components/ProductList";
 import Pagination from "./components/Pagination";
 import Footer from "./components/Footer.jsx";
 import Registration from "./components/Registration.jsx";
+import Market from "./components/Market.jsx";
 import "./App.css";
 
 // 메인 홈 페이지 컴포넌트
@@ -130,7 +131,7 @@ const App = () => {
 
         <Routes>
           <Route path="/" element={<HomePage />} />
-          <Route path="/items" element={<HomePage />} />
+          <Route path="/items" element={<Market />} />
           <Route path="/registration" element={<Registration />} />
           <Route path="/products/:id" element={<ProductDetailPage />} />
           <Route path="*" element={<NotFoundPage />} />

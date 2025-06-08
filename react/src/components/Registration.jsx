@@ -25,7 +25,6 @@ const Registration = () => {
     setIsSubmitting(true);
 
     try {
-      // API 호출 로직 (예시)
       console.log("상품 등록 데이터:", formData);
 
       // 성공 시 상품 목록 페이지로 이동
