@@ -1,13 +1,19 @@
-import React, { useState } from 'react';
-import './ProductList.css';
+import React, { useState } from "react";
+import { useNavigate } from "react-router-dom";
+import "./ProductList.css";
 
 const ProductList = ({ products, onSearch, onSortChange, sortOrder }) => {
-  const [searchTerm, setSearchTerm] = useState('');
+  const [searchTerm, setSearchTerm] = useState("");
+  const navigate = useNavigate();
 
   const handleSearchKeyPress = (e) => {
-    if (e.key === 'Enter') {
+    if (e.key === "Enter") {
       onSearch(searchTerm);
     }
+  };
+
+  const handleRegisterClick = () => {
+    navigate("/registration");
   };
 
   return (
@@ -28,10 +34,12 @@ const ProductList = ({ products, onSearch, onSortChange, sortOrder }) => {
               />
             </div>
           </div>
-          <button className="registerBtn">상품 등록하기</button>
+          <button className="registerBtn" onClick={handleRegisterClick}>
+            상품 등록하기
+          </button>
           <div className="sortContainer">
-            <select 
-              value={sortOrder} 
+            <select
+              value={sortOrder}
               onChange={(e) => onSortChange(e.target.value)}
               className="sortSelect"
             >
@@ -41,13 +49,13 @@ const ProductList = ({ products, onSearch, onSortChange, sortOrder }) => {
           </div>
         </div>
       </div>
-      
+
       <div className="productGrid">
         {products.map((product) => (
           <div key={product.id} className="productCard">
             <div className="productImageContainer">
-              <img 
-                src={product.images[0] || '/api/placeholder/300/200'} 
+              <img
+                src={product.images[0] || "/api/placeholder/300/200"}
                 alt={product.name}
                 className="productImage"
               />
