@@ -91,9 +91,6 @@ const Market = () => {
               onChange={(e) => setSearchTerm(e.target.value)}
               className="searchInput"
             />
-            <button type="submit" className="searchButton">
-              검색
-            </button>
           </form>
           <button className="registerButton" onClick={handleRegisterClick}>
             상품 등록하기

@@ -42,30 +42,30 @@
   z-index: 1;
 }
 
-.searchInput {
+.mainSearchInput {
   width: 325px;
   padding: 12px 12px 12px 40px;
   outline: none;
   border: none;
   border-radius: 12px;
   font-size: 16px;
-  background: #F3F4F6;
+  background: #f3f4f6;
   height: 42px;
   /*transition: border-color 0.2s ease, box-shadow 0.2s ease;*/
 }
 
-.searchInput:focus {
-  border: 1px solid #3692FF;
+.mainSearchInput:focus {
+  border: 1px solid #3692ff;
   box-shadow: 0 0 0 3px rgba(59, 130, 246, 0.1);
 }
 
-.searchInput::placeholder {
+.mainSearchInput::placeholder {
   color: #9ca3af;
 }
 
 .registerBtn {
-  background: #3692FF;
-  color: #F3F4F6;
+  background: #3692ff;
+  color: #f3f4f6;
   border: none;
   padding: 12px 20px;
   border-radius: 8px;
@@ -89,7 +89,7 @@
 
 .sortSelect {
   padding: 8px 12px;
-  border: 1px solid #E5E7EB;
+  border: 1px solid #e5e7eb;
   border-radius: 12px;
   background: white;
   font-size: 14px;
@@ -111,7 +111,7 @@
 }
 
 .productCard {
-  background: #FCFCFC;
+  background: #fcfcfc;
   border-radius: 12px;
   overflow: hidden;
   /*box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);*/

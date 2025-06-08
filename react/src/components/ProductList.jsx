@@ -29,8 +29,7 @@ const ProductList = ({ products, onSearch, onSortChange, sortOrder }) => {
                 placeholder="검색할 상품을 입력해주세요"
                 value={searchTerm}
                 onChange={(e) => setSearchTerm(e.target.value)}
-                onKeyPress={handleSearchKeyPress}
-                className="searchInput"
+                className="mainSearchInput"
               />
             </div>
           </div>
