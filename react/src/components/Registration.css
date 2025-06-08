@@ -16,14 +16,14 @@
   align-items: center;
   margin-bottom: 32px;
   padding-bottom: 16px;
-  border-bottom: 1px solid #e5e7eb;
 }
 
 .registrationTitle {
-  font-size: 24px;
-  font-weight: 700;
   color: #1f2937;
-  margin: 0;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 32px; /* 160% */
 }
 
 .registrationForm {
@@ -38,22 +38,25 @@
 }
 
 .formLabel {
-  font-size: 18px;
-  font-weight: 700;
   color: #1f2937;
+  font-size: 18px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 26px;
   margin-bottom: 16px;
 }
 
 .formInput,
 .formTextarea {
-  padding: 16px;
-  border: none;
+  display: flex;
+  height: 56px;
+  padding: 16px 24px;
+  align-items: flex-start;
+  gap: 10px;
+  align-self: stretch;
   border-radius: 12px;
-  background-color: #f3f4f6;
-  font-size: 16px;
-  color: #374151;
-  transition: background-color 0.2s;
-  resize: none;
+  background: #f3f4f6;
+  border-style: none;
 }
 
 .formInput::placeholder,
@@ -101,24 +104,30 @@
 }
 
 .submitBtn {
-  padding: 12px 24px;
-  background-color: #3b82f6;
+  display: flex;
+  padding: 12px 23px;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  background-color: #3692ff;
   color: white;
   border: none;
   border-radius: 8px;
   font-size: 16px;
+  font-style: normal;
   font-weight: 600;
+  line-height: 26px;
   cursor: pointer;
   transition: background-color 0.2s;
   min-width: 80px;
 }
 
 .submitBtn:hover:not(:disabled) {
-  background-color: #2563eb;
+  background-color: #3692ff;
 }
 
 .submitBtn:disabled {
-  background-color: #d1d5db;
+  background-color: #9ca3af;
   cursor: not-allowed;
 }
 

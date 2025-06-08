@@ -114,10 +114,10 @@ const Registration = () => {
             />
             <div className="tagButtons">
               <button type="button" className="tagButton">
-                #디지털기기
+                #티셔츠
               </button>
               <button type="button" className="tagButton">
-                #생활가전
+                #상의
               </button>
             </div>
           </div>
