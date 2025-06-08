@@ -1,5 +1,5 @@
-import React from 'react';
-import './BestProductList.css';
+import React from "react";
+import "./BestProductList.css";
 
 const BestProductList = ({ products }) => {
   const bestProducts = products.slice(0, 4);
@@ -11,8 +11,8 @@ const BestProductList = ({ products }) => {
         {bestProducts.map((product) => (
           <div key={product.id} className="bestProductCard">
             <div className="productImageContainer">
-              <img 
-                src={product.images[0] || '/api/placeholder/300/200'} 
+              <img
+                src={product.images[0] || "/api/placeholder/300/200"}
                 alt={product.name}
                 className="productImage"
               />
@@ -22,7 +22,7 @@ const BestProductList = ({ products }) => {
               <p className="productPrice">{product.price.toLocaleString()}원</p>
               <div className="productStats">
                 <span className="likes">
-                  <span className="heartIcon">♥</span>
+                  <span className="heartIcon"></span>
                   {product.favoriteCount}
                 </span>
               </div>
