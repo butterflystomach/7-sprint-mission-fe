@@ -1,0 +1,151 @@
+.bestPosts {
+  padding: 20px;
+  background-color: #ffffff;
+  margin-bottom: 20px;
+}
+
+.title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  margin: 0 0 20px 0;
+}
+
+.postGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+}
+
+.postCard {
+  position: relative;
+  background-color: #fafafa;
+  border: 1px solid #f0f0f0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.postCard:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.post {
+  display: block;
+  text-decoration: none;
+  color: inherit;
+  padding: 15px;
+  height: 100%;
+}
+
+.bestBadge {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  background: linear-gradient(135deg, #ffd700, #ffa500);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 12px;
+  font-size: 12px;
+  font-weight: bold;
+  z-index: 1;
+}
+
+.badgeText {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: space-between;
+}
+
+.postTitle {
+  font-size: 16px;
+  font-weight: 500;
+  color: #333;
+  margin: 0 0 10px 0;
+  line-height: 1.4;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  padding-top: 25px; /* Best 뱃지 공간 확보 */
+}
+
+.postMeta {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 12px;
+  color: #666;
+  margin-top: auto;
+  flex-wrap: wrap;
+}
+
+.author {
+  font-weight: 500;
+}
+
+.views {
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.date {
+  color: #999;
+  margin-left: auto;
+}
+
+.postImage {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  flex-shrink: 0;
+}
+
+.imagePlaceholder {
+  width: 40px;
+  height: 40px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 16px;
+  color: #999;
+}
+
+/* 반응형 디자인 */
+@media (max-width: 768px) {
+  .postGrid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .postCard {
+    min-height: 120px;
+  }
+
+  .postMeta {
+    gap: 8px;
+  }
+
+  .date {
+    margin-left: 0;
+    width: 100%;
+  }
+}
+
+@media (max-width: 1024px) {
+  .postGrid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
