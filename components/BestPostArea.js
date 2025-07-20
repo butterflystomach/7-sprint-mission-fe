@@ -1,8 +1,15 @@
 import React from "react";
 import Link from "next/link";
 import styles from "./BestPostArea.module.css";
+import { useRouter } from "next/router";
 
 export default function BestPosts({ className = "", posts }) {
+  const router = useRouter();
+
+  const handlePostClick = (postId) => {
+    router.push(`/posts/${postId}`);
+  };
+
   return (
     <div className={`${styles.bestPosts} ${className}`}>
       <h2 className={styles.title}>베스트 게시글</h2>

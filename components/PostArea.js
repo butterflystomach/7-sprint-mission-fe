@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import Link from "next/link";
 import styles from "./PostArea.module.css";
+import { useRouter } from "next/router";
 
 export default function PostArea({ className = "", posts }) {
   const [searchTerm, setSearchTerm] = useState("");
@@ -17,6 +18,12 @@ export default function PostArea({ className = "", posts }) {
   const handleWritePost = () => {
     // 글쓰기 기능 구현
     console.log("글쓰기 버튼 클릭");
+  };
+
+  const router = useRouter();
+
+  const handlePostClick = (postId) => {
+    router.push(`/posts/${postId}`);
   };
 
   return (
