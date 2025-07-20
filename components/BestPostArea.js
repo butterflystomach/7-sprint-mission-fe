@@ -1,6 +1,6 @@
 import React from "react";
 import Link from "next/link";
-import styles from "./BestPosts.module.css";
+import styles from "./BestPostArea.module.css";
 
 export default function BestPosts({ className = "", posts }) {
   return (

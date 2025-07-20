@@ -37,12 +37,11 @@ export default function PostArea({ className = "", posts }) {
         <div className={styles.searchBox}>
           <input
             type="text"
-            placeholder="검색어 입력을 입력해주세요"
+            placeholder="검색할 상품을 입력해주세요"
             value={searchTerm}
             onChange={handleSearch}
             className={styles.searchInput}
           />
-          <button className={styles.searchButton}>🔍</button>
         </div>
         <select
           value={sortOrder}

@@ -34,7 +34,7 @@
 }
 
 .writeButton {
-  background-color: #4a90e2;
+  background-color: #3692ff;
   color: white;
   border: none;
   padding: 8px 16px;
@@ -45,7 +45,7 @@
 }
 
 .writeButton:hover {
-  background-color: #357abd;
+  background-color: #3692ff;
 }
 
 /* 검색 및 정렬 영역 */
@@ -66,16 +66,21 @@
 }
 
 .searchInput {
-  width: 100%;
-  padding: 8px 40px 8px 12px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 14px;
-  outline: none;
+  display: flex;
+  width: 800px;
+  height: 42px;
+  padding: 9px 20px 9px 16px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  border: none;
+  background: var(--Secondary-100, #f3f4f6);
 }
 
 .searchInput:focus {
-  border-color: #4a90e2;
+  border-color: #3692ff;
 }
 
 .searchButton {
@@ -89,12 +94,23 @@
 }
 
 .sortSelect {
-  padding: 8px 12px;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  font-size: 14px;
+  display: flex;
+  width: 130px;
+  height: 42px;
+  padding: 12px 20px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 12px;
+  border: 1px solid var(--Cool-Gray-200, #e5e7eb);
+  background: #fff;
   outline: none;
   cursor: pointer;
+  color: var(--Secondary-800, #1f2937);
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 26px; /* 162.5% */
 }
 
 .sortSelect:focus {

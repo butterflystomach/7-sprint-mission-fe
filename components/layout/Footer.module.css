@@ -1,10 +1,38 @@
 .footer {
   padding: 31px 0;
-  border-bottom: 1px solid #1f1f1f;
+  background: var(--Secondary-900, #111827);
 }
 
 .container {
   display: flex;
   align-items: center;
   justify-content: space-between;
+}
+
+.copyright {
+  color: var(--Secondary-400, #9ca3af);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.links {
+  display: flex;
+  align-items: flex-start;
+  gap: 30px;
+  color: var(--Secondary-400, #9ca3af);
+  text-align: center;
+  font-size: 16px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+}
+
+.socialLinks {
+  display: flex;
+  width: 116px;
+  align-items: flex-start;
+  gap: 12px;
 }

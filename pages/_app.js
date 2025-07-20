@@ -1,15 +1,22 @@
-import Layout from "@/components/layout/Layout";
-import GlobalStyle from "@/styles/GlobalStyle";
-import theme from "@/styles/theme";
-import { ThemeProvider } from "styled-components";
+import Container from "@/components/Container";
+import Header from "@/components/layout/Header";
+import Footer from "@/components/layout/Footer";
+import { ThemeProvider } from "@/lib/ThemeContext";
+import "@/styles/globals.css";
+import Head from "next/head";
 
 export default function App({ Component, pageProps }) {
   return (
-    <ThemeProvider theme={theme}>
-      <GlobalStyle />
-      <Layout>
+    <ThemeProvider>
+      <Head>
+        <title>판다마켓</title>
+        <link rel="icon" href="/logo.svg" />
+      </Head>
+      <Header />
+      <Container>
         <Component {...pageProps} />
-      </Layout>
+      </Container>
+      <Footer />
     </ThemeProvider>
   );
 }
